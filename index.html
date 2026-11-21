@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Agbaeze Jennifer | Web Developer &amp; Aspiring Creative Technologist</title>
+  <meta name="description" content="Agbaeze Jennifer is a web developer and Computer Science student building creative, interactive and tech-driven experiences.">
+  <meta name="author" content="Agbaeze Jennifer">
+  <meta name="theme-color" content="#05070d">
+  <link rel="canonical" href="https://YOUR-DOMAIN.com/">
+
+  <meta property="og:title" content="Agbaeze Jennifer | Web Developer &amp; Aspiring Creative Technologist">
+  <meta property="og:description" content="I build creative, interactive and tech-driven experiences.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://YOUR-DOMAIN.com/">
+  <meta property="og:image" content="https://YOUR-DOMAIN.com/assets/hero.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%2305070d'/><text x='32' y='42' font-size='28' font-family='Arial' font-weight='700' text-anchor='middle' fill='%239db8ff'>AJ</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Agbaeze Jennifer",
+    "alternateName": "Jennifer Agbaeze",
+    "jobTitle": "Web Developer",
+    "url": "https://YOUR-DOMAIN.com/",
+    "image": "https://YOUR-DOMAIN.com/assets/hero.png",
+    "email": "mailto:agbaezejennifer134@gmail.com",
+    "knowsAbout": ["Web development", "JavaScript", "React", "Next.js", "Creative technology"],
+    "sameAs": [
+      "https://github.com/agbaeze-jennifer",
+      "https://www.linkedin.com/in/agbaeze-jennifer-327310450/",
+      "https://t.me/AC_Jennifer"
+    ]
+  }
+  </script>
+
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <a class="skip" href="#about">Skip to content</a>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <!-- NAVIGATION -->
+  <header class="nav" id="nav">
+    <a href="#home" class="brand" aria-label="Agbaeze Jennifer, home">JENNIFER</a>
+
+    <nav class="pill-nav" id="pillNav" aria-label="Main">
+      <a href="#home" data-s="home">Home</a>
+      <a href="#about" data-s="about">About</a>
+      <a href="#skills" data-s="skills">Skills</a>
+      <a href="#projects" data-s="projects">Projects</a>
+      <a href="#process" data-s="process">Process</a>
+      <a href="#contact" data-s="contact">Contact</a>
+      <a href="assets/resume.pdf" class="nav-cv-mobile" download>Download CV</a>
+    </nav>
+
+    <a href="assets/resume.pdf" class="nav-cv" download>Download CV</a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="pillNav">
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-bg"></div>
+      <canvas id="fx" aria-hidden="true"></canvas>
+
+      <!-- If your photo is NOT a transparent cutout, change to: class="photo-wrap circle" -->
+      <div class="photo-wrap" id="photoWrap">
+        <img class="photo" src="assets/hero.png" alt="Agbaeze Jennifer, web developer" fetchpriority="high" onerror="this.style.display='none'">
+      </div>
+
+      <div class="hero-top">
+        <p class="hello">Hi, I'm <b>Agbaeze Jennifer</b></p>
+        <p class="role" id="role">Web Developer</p>
+      </div>
+
+      <div class="hero-main">
+        <h1 aria-label="I build web experiences that feel alive">
+          <span class="ln"><span>I build web</span></span>
+          <span class="ln"><span>experiences <span class="pill"><i></i>open to work</span></span></span>
+          <span class="ln"><span>that feel alive</span></span>
+        </h1>
+
+        <div class="hero-foot">
+          <div class="chips">
+            <div class="chip"><b>Web developer</b>Interactive, responsive sites</div>
+            <div class="chip"><b>Creative technologist</b>In the making</div>
+          </div>
+
+          <div class="hero-cta">
+            <a class="btn btn-grad" href="#projects">Check out my work</a>
+            <a class="btn btn-ghost" href="#contact">Contact me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- MARQUEE (main.js duplicates the content so the loop is seamless) -->
+    <div class="marquee" aria-hidden="true">
+      <div class="track" id="track">
+        <span>Code that moves <em>design that stays</em></span>
+        <span>Fast sites <em>that feel alive</em></span>
+        <span>Scroll <em>hover</em> click</span>
+        <span>Interactive <em>by design</em></span>
+      </div>
+    </div>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="wrap">
+
+        <h2 class="statement" id="statement">I build creative, interactive and tech-driven experiences.</h2>
+
+        <div class="about-grid">
+          <div class="about-copy">
+            <p class="rv">
+              I'm a web developer and Computer Science student who likes turning designs
+              into fast, responsive sites that feel alive when you scroll, hover and click.
+            </p>
+            <p class="rv" style="--d:.1s">
+              I'm working towards becoming a creative technologist: someone who mixes
+              design, code and new tools to build experiences people remember.
+            </p>
+            <a class="btn btn-grad rv" style="--d:.2s" href="assets/resume.pdf" download>Download resume</a>
+          </div>
+
+          <div class="facts">
+            <div class="fact rv">
+              <small>Education</small>
+              <h3>B.Sc. Computer Science</h3>
+              <p>MOUAU</p>
+            </div>
+            <div class="fact rv" style="--d:.1s">
+              <small>What I do</small>
+              <h3>Web development</h3>
+              <p>Responsive, animated, interactive websites built from design.</p>
+            </div>
+            <div class="fact rv" style="--d:.2s">
+              <small>Goal</small>
+              <h3>Creative technologist</h3>
+              <p>Mixing design, code and new tools into experiences people remember.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT NOW -->
+        <div class="now rv">
+          <h3 class="now-title">Right now</h3>
+
+          <div class="now-grid">
+            <div>
+              <small>Learning</small>
+              <p>GSAP animation and the Next.js App Router.</p>
+            </div>
+            <div>
+              <small>Building</small>
+              <p>A full-stack website, an AI tool and a few creative experiments.</p>
+            </div>
+            <div>
+              <small>Exploring</small>
+              <p>Creative technology: where design, code and new tools meet.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+      <div class="wrap">
+
+        <div class="sec-head">
+          <h2>Tools I build with</h2>
+          <p>From the first line of markup to the last bit of motion, this is what I use to ship sites that load fast and feel good to use.</p>
+        </div>
+
+        <div class="skill-grid" id="skillGrid">
+
+          <article class="skill rv">
+            <div class="ico"><svg viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16" /></svg></div>
+            <h3>Front-end</h3>
+            <p>Clean, semantic and responsive on every screen size.</p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              <span>React</span><span>Next.js</span><span>Tailwind CSS</span>
+            </div>
+          </article>
+
+          <article class="skill rv" style="--d:.08s">
+            <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1" /></svg></div>
+            <h3>Motion</h3>
+            <p>Animation that guides attention and answers what you do.</p>
+            <div class="tags">
+              <span>GSAP</span><span>CSS animation</span><span>Scroll effects</span><span>Canvas</span>
+            </div>
+          </article>
+
+          <article class="skill rv" style="--d:.16s">
+            <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 4h16v12H4zM8 20h8M12 16v4" /></svg></div>
+            <h3>Design to code</h3>
+            <p>Turning a design file into a pixel-faithful, accessible page.</p>
+            <div class="tags">
+              <span>Canva</span><span>Responsive layout</span><span>Accessibility</span><span>Design systems</span>
+            </div>
+          </article>
+
+          <article class="skill rv" style="--d:.24s">
+            <div class="ico">
+              <svg viewBox="0 0 24 24">
+                <circle cx="6" cy="6" r="2.5" /><circle cx="6" cy="18" r="2.5" /><circle cx="18" cy="9" r="2.5" />
+                <path d="M6 8.5v7M18 11.5c0 4-6 2-11 5" />
+              </svg>
+            </div>
+            <h3>Workflow</h3>
+            <p>Tools that keep projects organised, versioned and live.</p>
+            <div class="tags">
+              <span>Git &amp; GitHub</span><span>Vercel</span><span>VS Code</span><span>Performance</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+      <div class="wrap">
+
+        <div class="sec-head">
+          <h2>Selected work</h2>
+          <p>What I've built and what I'm working on now. More get added as they ship.</p>
+        </div>
+
+        <!-- filter buttons are generated by main.js -->
+        <div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
+
+        <!-- project cards are generated by main.js -->
+        <div class="proj-grid" id="projGrid"></div>
+
+        <div class="more rv">
+          <a class="btn btn-ghost" href="https://github.com/agbaeze-jennifer" target="_blank" rel="noopener">See more on GitHub</a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- PROCESS -->
+    <section class="process" id="process">
+      <div class="wrap process-grid">
+
+        <div class="sec-head">
+          <h2>From idea to launch</h2>
+          <p>How a freelance project with me works: the same four steps every time, so you always know what happens next.</p>
+        </div>
+
+        <div class="timeline" id="timeline">
+          <div class="fill" id="tfill"></div>
+
+          <div class="step" data-n="1">
+            <h3>Understand</h3>
+            <p>We talk about what the site needs to do, who will use it and what success looks like.</p>
+          </div>
+
+          <div class="step" data-n="2">
+            <h3>Design</h3>
+            <p>I plan the layout and look together with you, so you approve it before any code is written.</p>
+          </div>
+
+          <div class="step" data-n="3">
+            <h3>Build</h3>
+            <p>I turn the approved design into a fast, responsive site with the motion and interactions it needs.</p>
+          </div>
+
+          <div class="step" data-n="4">
+            <h3>Launch and improve</h3>
+            <p>I test on real devices, go live, and keep improving based on how people use it.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="ring" aria-hidden="true"></div>
+
+      <div class="wrap">
+
+        <div class="contact-head">
+          <h2>Have something that needs building?</h2>
+          <p>Whether it's a new site, a redesign or a creative idea you can't shake, tell me about it and I'll reply by email.</p>
+        </div>
+
+        <div class="contact-grid">
+
+          <div class="card info">
+
+            <a href="mailto:agbaezejennifer134@gmail.com">
+              <span class="ic"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L20 7H4zm0 1.9L4 9v8h16V9z" /></svg></span>
+              <div><small>Email</small><span>agbaezejennifer134@gmail.com</span></div>
+            </a>
+
+            <a href="https://t.me/AC_Jennifer" target="_blank" rel="noopener">
+              <span class="ic"><svg viewBox="0 0 24 24"><path d="M21.5 3.5 2.8 10.7c-.9.35-.9 1.02-.16 1.29l4.78 1.7 1.84 5.73c.23.64.12.9.8.9.53 0 .77-.24 1.05-.53l2.3-2.23 4.79 3.53c.88.49 1.52.23 1.75-.82l3.06-14.43c.34-1.31-.5-1.9-1.51-1.49zM8.16 13.36l10.98-6.93c.54-.33 1.04-.15.63.2l-8.9 8.04-.34 3.72-2.37-5.03z" /></svg></span>
+              <div><small>Telegram</small><span>@AC_Jennifer</span></div>
+            </a>
+
+            <a href="https://github.com/agbaeze-jennifer" target="_blank" rel="noopener">
+              <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z" /></svg></span>
+              <div><small>GitHub</small><span>agbaeze-jennifer</span></div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/agbaeze-jennifer-327310450/" target="_blank" rel="noopener">
+              <span class="ic"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11.5H3zM9.5 9.75h3.83v1.57h.06c.53-1 1.84-2.07 3.79-2.07 4.05 0 4.8 2.66 4.8 6.13v5.87h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75v5.29h-4z" /></svg></span>
+              <div><small>LinkedIn</small><span>Agbaeze Jennifer</span></div>
+            </a>
+
+            <div>
+              <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" /></svg></span>
+              <div><small>Location</small><span>Nigeria</span></div>
+            </div>
+
+          </div>
+
+
+          <form class="card" id="form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+
+            <input type="hidden" name="access_key" value="00d7c5bb-a8ea-4c30-a561-63a4116176d0">
+            <input type="hidden" name="subject" value="New Portfolio Contact Message">
+            <input type="hidden" name="from_name" value="Agbaeze Jennifer Portfolio">
+
+            <!-- spam trap: real people never see or tick this -->
+            <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+            <div class="row2">
+              <label>
+                Your name
+                <input type="text" id="fName" name="name" required autocomplete="name" placeholder="Your name">
+              </label>
+              <label>
+                Your email
+                <input type="email" id="fEmail" name="email" required autocomplete="email" placeholder="you@example.com">
+              </label>
+            </div>
+
+            <label>
+              Message
+              <textarea id="fMsg" name="message" required placeholder="Tell me about your project"></textarea>
+            </label>
+
+            <button class="btn btn-grad" type="submit">Send message</button>
+            <p class="note" id="note" role="status" aria-live="polite"></p>
+
+          </form>
+        </div>
+
+
+        <div class="collab rv">
+          <h3>Looking for collaboration?</h3>
+          <p>I'm interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, my inbox is open.</p>
+          <div class="tags">
+            <span>Available for freelance</span>
+            <span>Open to collaborations</span>
+            <span>Remote friendly</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="socials">
+
+      <a href="https://github.com/agbaeze-jennifer" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24"><path d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z" /></svg>
+      </a>
+
+      <a href="https://www.linkedin.com/in/agbaeze-jennifer-327310450/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11.5H3zM9.5 9.75h3.83v1.57h.06c.53-1 1.84-2.07 3.79-2.07 4.05 0 4.8 2.66 4.8 6.13v5.87h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75v5.29h-4z" /></svg>
+      </a>
+
+      <a href="https://t.me/AC_Jennifer" target="_blank" rel="noopener" aria-label="Telegram">
+        <svg viewBox="0 0 24 24"><path d="M21.5 3.5 2.8 10.7c-.9.35-.9 1.02-.16 1.29l4.78 1.7 1.84 5.73c.23.64.12.9.8.9.53 0 .77-.24 1.05-.53l2.3-2.23 4.79 3.53c.88.49 1.52.23 1.75-.82l3.06-14.43c.34-1.31-.5-1.9-1.51-1.49zM8.16 13.36l10.98-6.93c.54-.33 1.04-.15.63.2l-8.9 8.04-.34 3.72-2.37-5.03z" /></svg>
+      </a>
+
+      <a href="mailto:agbaezejennifer134@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L20 7H4zm0 1.9L4 9v8h16V9z" /></svg>
+      </a>
+
+    </div>
+
+    <p>&copy; <span id="yr"></span> Agbaeze Jennifer. Designed and built by me.</p>
+  </footer>
+
+  <a href="#home" class="totop" id="toTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7" /></svg>
+  </a>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

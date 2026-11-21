@@ -1,0 +1,6 @@
+Put these two files in this folder:
+
+  hero.png    your photo with the background removed (transparent PNG, head and shoulders)
+  resume.pdf  your resume, used by the "Download resume" button
+
+Then delete this note.
