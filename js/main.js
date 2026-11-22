@@ -27,7 +27,7 @@
       d: 'The site you are on. A scroll-driven portfolio with a cutout hero, motion and a working contact form.',
       focus: 'Responsive layout, scroll animation and a working contact form, all coded by hand.',
       tags: ['HTML', 'CSS', 'JavaScript'],
-      cls: 't1', cat: 'web', img: 'assets/projects/portfolio.png', live: '', code: 'https://github.com/agbaeze-jennifer'
+      cls: 't1', cat: 'web', img: 'assets/projects/portfolio.png', live: 'https://agbaezejennifer.vercel.app/', code: 'https://github.com/agbaeze-jennifer'
     },
     {
       t: 'Full-Stack Website',
